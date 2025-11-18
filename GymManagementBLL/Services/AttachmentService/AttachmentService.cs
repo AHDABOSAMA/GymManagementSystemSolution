@@ -11,6 +11,7 @@ namespace GymManagementBLL.Services.AttachmentService
     public class AttachmentService : IAttachmentService
     {
         private readonly string[] AllowedExtensions = { ".jpg", ".jpeg", ".png" };
+
         private readonly long MaxFileSize = 5 * 1024 * 1024;
         private readonly IWebHostEnvironment _wepHostEnvironment;
 
